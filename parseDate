@@ -1,4 +1,3 @@
 #! /bin/bash
-cd ~/vimeo/dev/vimeo-php56;
 date="$(git reflog --date=iso $1 | tail -1 | grep -o -e '{[^}]*}')"
-echo $date
+readDate $date
